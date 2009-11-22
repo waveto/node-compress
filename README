@@ -3,7 +3,7 @@ node-compress
 
 A streaming compression / gzip module for node.js
 
-To install, ensure that you have openssl installed, and run:
+To install, ensure that you have libz installed, and run:
 
 node-waf configure 
 node-waf build
