@@ -2,6 +2,7 @@
 #include <node_events.h>
 #include <assert.h>
 #include <string.h>
+#include <stdlib.h>
 #include <zlib.h>
 
 #define CHUNK 16384
