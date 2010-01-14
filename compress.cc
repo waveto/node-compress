@@ -45,12 +45,12 @@ class Gzip : public EventEmitter {
     char* temp;
     int i=1;
 
-    if (data_len == 0)
-      return 0;
-
     *out = NULL;
     *out_len = 0;
     ret = 0;
+
+    if (data_len == 0)
+      return 0;
 
     while(data_len>0) {    
       if (data_len>CHUNK) {
@@ -244,12 +244,11 @@ class Gunzip : public EventEmitter {
     char* temp;
     int i=1;
 
-    if (data_len == 0)
-      return 0;
-
     *out = NULL;
     *out_len = 0;
 
+    if (data_len == 0)
+      return 0;
 
     while(data_len>0) {    
       if (data_len>CHUNK) {
